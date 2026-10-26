@@ -8,8 +8,8 @@
 <meta name="robots" content="index, follow, max-image-preview:large">
 <meta name="theme-color" content="#2D4A3E">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Westbury">
-<meta property="og:description" content="[Add a one-sentence description of Westbury here.]">
+<meta property="og:title" content="CV">
+<meta property="og:description" content="[Add a one-sentence description of CV here.]">
 <meta property="og:image" content="images/front_exterior.jpg">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%232D4A3E'/><path d='M10 36 32 16l22 20v16H10z' fill='%23C48A4A'/><path d='M26 52V40h12v12' fill='%23F4F6F4'/></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -74,11 +74,11 @@ footer{padding:28px 0;font-size:15px;color:var(--gr)}footer .wrap{display:flex;j
 <main id="main"><div class="wrap">
 
 <div class="gal">
-<img src="images/front_exterior.jpg" alt="Westbury, front exterior" width="1200" height="800" fetchpriority="high">
-<img src="images/bedroom_1.jpg" alt="Westbury, a bedroom" width="600" height="400">
-<img src="images/bathroom_2.jpg" alt="Westbury, a  bathroom" width="600" height="400">
-<img src="images/kitchen_2.jpg" alt="Westbury, kitchen" width="600" height="400">
-<img src="images/playroom_3.jpg" alt="Westbury, playroom" width="600" height="400">
+<img src="images/front_exterior.jpg" alt="CV, front exterior" width="1200" height="800" fetchpriority="high">
+<img src="images/bedroom_1.jpg" alt="CV, a bedroom" width="600" height="400">
+<img src="images/bathroom_2.jpg" alt="CV, a  bathroom" width="600" height="400">
+<img src="images/kitchen_2.jpg" alt="CV, kitchen" width="600" height="400">
+<img src="images/playroom_3.jpg" alt="CV, playroom" width="600" height="400">
 </div>
 
 <div class="head"><div><h1>Eastbay Family Getaway</h1><p> Large, family-friendly home near Oakland </p></div><p><b>★ </b> </p></div>
@@ -147,10 +147,12 @@ footer{padding:28px 0;font-size:15px;color:var(--gr)}footer .wrap{display:flex;j
 </div>
 
 <section class="area" id="area" aria-labelledby="a1"><div class="wrap">
-<div><h2 id="a1">Castro Valley</h2><p> We may have nothing, but we're close to everything.</p>
+<div><h2 id="a1">Castro Valley</h2><p> We're close to the best that the Bay Area has to offer.</p>
 <p> These types are just approximations that depend highly on your exact destination and traffic </p>
   <ul>
-<li><span>San Francisco</span><span>22-25 min</span></li>
+<li><span>There are plenty of entrances into beautiful Lake Chabot in Castro Valley</span><span>0 min </span></li>
+<li><span> San Mateo </span><span>18-22 min</span></li>
+    <li><span>San Francisco</span><span>22-25 min</span></li>
 <li><span>San Jose </span><span>18-22 min</span></li>
 <li><span>Berkeley</span><span>18 min</span></li>
 <li><span>Palo Alto</span><span>22-25 min</span></li>
@@ -159,7 +161,7 @@ footer{padding:28px 0;font-size:15px;color:var(--gr)}footer .wrap{display:flex;j
 </div></section>
 
 </main>
-<footer><div class="wrap"><p>© <span id="yr"></span> Westbury</p><p>Contact: info@naturlux.net</p></div></footer>
+<footer><div class="wrap"><p>© <span id="yr"></span> naturlux</p><p>Contact: info@naturlux.net</p></div></footer>
 
 <!-- Lightbox overlay for the full gallery (hidden until a photo is clicked) -->
 <div class="lb" id="lb" hidden role="dialog" aria-modal="true" aria-label="Photo viewer">
@@ -234,7 +236,7 @@ const PHOTOS=[
     ['side_yard', 'Covered Parking Space']
 ];
 const TOTAL=PHOTOS.length;
-const label=name=>'Westbury, '+name.replace(/_/g,' ').replace(/\s\d+$/,'').trim();
+const label=name=>'CV, '+name.replace(/_/g,' ').replace(/\s\d+$/,'').trim();
 const grid=document.getElementById('photoGrid');
 let html='';
 PHOTOS.forEach(([name,cap],idx)=>{const i=idx+1;html+=`<figure><button type="button" data-i="${i}" aria-label="Open photo ${i} of ${TOTAL}: ${cap}"><img src="images/${name}.jpg" alt="${label(name)}" loading="lazy" width="400" height="300"></button><figcaption>${cap}</figcaption></figure>`});
