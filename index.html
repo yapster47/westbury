@@ -9,7 +9,7 @@
 <meta name="theme-color" content="#2D4A3E">
 <meta property="og:type" content="website">
 <meta property="og:title" content="CV">
-<meta property="og:description" content="[Add a one-sentence description of CV here.]">
+<meta property="og:description" content="Family-friendly.">
 <meta property="og:image" content="images/front_exterior.jpg">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%232D4A3E'/><path d='M10 36 32 16l22 20v16H10z' fill='%23C48A4A'/><path d='M26 52V40h12v12' fill='%23F4F6F4'/></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -199,7 +199,7 @@ function calc(){$('si').textContent=ci?fmt(ci):'Add date';$('so').textContent=co
 let n=0,wd=0,we=0;for(let d=new Date(ci);d<co;d.setDate(d.getDate()+1)){n++;(d.getDay()===5||d.getDay()===6)?we++:wd++}const dog=+$('dg').value,tot=wd*210+we*260+95+dog;
 $('bd').innerHTML=`${wd?`<li><span>${wd} weeknight${wd>1?'s':''} x $210</span><span>${f(wd*210)}</span></li>`:''}${we?`<li><span>${we} weekend night${we>1?'s':''} x $260</span><span>${f(we*260)}</span></li>`:''}<li><span>Cleaning</span><span>$95</span></li>${dog?`<li><span>Dog fee</span><span>$40</span></li>`:''}<li class="t"><span>Total for ${n} night${n>1?'s':''}</span><span>${f(tot)}</span></li>`;
 $('rq').disabled=n<2;$('nt').textContent=n<2?'Minimum stay is 2 nights.':"You won't be charged yet."}
-$('dg').onchange=calc;$('rq').onclick=()=>{$('msg').textContent=`Request sent for ${fmt(ci)} to ${fmt(co)}. [Host name(s)] usually reply within an hour.`;$('msg').classList.add('on')};
+$('dg').onchange=calc;$('rq').onclick=()=>{$('msg').textContent=`Request sent for ${fmt(ci)} to ${fmt(co)}.`;$('msg').classList.add('on')};
 let s=new Date(today.getTime()+21*864e5);while(booked.has(key(s))||booked.has(key(new Date(s.getTime()+864e5)))||booked.has(key(new Date(s.getTime()+2*864e5))))s=new Date(s.getTime()+864e5);ci=s;co=new Date(s.getTime()+3*864e5);vm=new Date(ci.getFullYear(),ci.getMonth(),1);cal();
 })();
 </script>
